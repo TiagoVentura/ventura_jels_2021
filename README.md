@@ -1,17 +1,15 @@
-
 ## Replication Materials
 
-Replication materials for "Will I Get Covid? Partisanship, Social Media Frames, and Perceptions of Health Risk in Brazil" Ernesto Calvo and Tiago Ventura. Forthcoming in the Latin American Politics and Society. 
+Replication materials for Ventura, Tiago "Do mayors matter? Reverse coattails on congressional elections in Brazil". Forthcoming in the Electoral Studies 
 
 > __Abstract:__
-> In these polarized and challenging times, not even perceptions of personal risk are immune to partisanship. This paper introduces results from a new survey with an embedded social media experiment conducted during the first months of the COVID-19 pandemic in Brazil. Descriptive results show that pro-government and opposition partisans report very
-different expectations of health and job risks. Job and health policy have become wedge issues that elicit partisan responses. We exploit random variation in the survey recruitment to show the effects of the President’s first speech on national TV on perceived risk and the moderating effect of partisanship. We present a framing experiment that models key cognitive mechanisms driving partisan differences in perceptions of health risks and job security during the COVID-19 crisis.
+> In federal democracies, parties often invest in local politics as a strategy to improve their performance on upcoming national elections. In this study, I use the concept of reverse coattails to investigate how winning local elections affect upper-level electoral dynamics in Brazil. Using a regression discontinuity design (RDD), I show that parties in Brazil boost their national performance, earning more votes on House elections in districts where their members control local offices. I discuss how access to ‘‘pork” controlled by co-partisan House members and mechanical information gains explain these effects. Additionally, I use a Bayesian LASSO algorithm to address data sparsity in RDD designs, and to demonstrate the existence of pro-large party bias on the coattail effects. By disentangling the various effects of winning local elections, this paper contributes to a greater understanding of how parties build electoral strength in fragmented democracies.
 
-The latest pre-print can be found [here](Covid_social_media_LAPS.pdf). The published version is [here]()
+The latest pre-print can be found [here](do_mayors_matter.pdf). The published version is [here]()
 
 ## Tutorial 
 
-This README file provides an overview of the replications materials for the article. The R codes used in the article can be found under the folder Codes. The survey data, which we fully describe below, is under the folder data. Results are exported to the folder output. 
+This README file provides an overview of the replications materials for the article. The R codes used in the article can be found under the folder **Codes**. The electoral data, which I fully describe below, is under the folder **data**. Results are exported to the folder **output**. 
 
 ## Codes
 
