@@ -1,0 +1,24 @@
+%latex.default(result, file = here("outputs", "appendix", "table_9.tex"),     title = "", table.env = FALSE, center = "none", col.just = c("l",         rep("c", ncol(result) - 1)), colheads = colnms, booktabs = TRUE,     rowname = NULL, caption = "\\textsc{Regression Discontinuity Results across the subsamples }",     n.cgroup = 6, cgroup = "\\bfseries{\\textsc{Outcome: Vote Share Co-partisans for the House Election}}")%
+\begin{table}[!tbp]
+\caption{\textsc{Regression Discontinuity Results across the subsamples }\label{}} 
+\begin{tabular}{lccccc}
+\toprule
+\multicolumn{6}{c}{\bfseries \bfseries{\textsc{Outcome: Vote Share Co-partisans for the House Election}}}\tabularnewline
+\cline{1-6}
+\multicolumn{1}{c}{Subsample}&\multicolumn{1}{c}{Optimal Bandwidth (Margin of Victory)}&\multicolumn{1}{c}{Estimate}&\multicolumn{1}{c}{Lower 95\% CI}&\multicolumn{1}{c}{Lower 95\% CI}&\multicolumn{1}{c}{Number of cases}\tabularnewline
+\midrule
+Incumbent&$~0.147$&$~0.031$&$~0.023$&$0.039$&$13238$\tabularnewline
+Year: 2000&$18.560$&$~0.030$&$~0.013$&$0.048$&$~3636$\tabularnewline
+Year: 2004&$15.618$&$~0.022$&$~0.005$&$0.039$&$~3576$\tabularnewline
+Year: 2008&$15.563$&$~0.033$&$~0.018$&$0.049$&$~3352$\tabularnewline
+Year: 2012&$12.092$&$~0.034$&$~0.019$&$0.049$&$~2968$\tabularnewline
+Open Seat Sample&$17.715$&$~0.016$&$~0.005$&$0.027$&$~6311$\tabularnewline
+Reelection Sample&$11.456$&$~0.061$&$~0.046$&$0.076$&$~4569$\tabularnewline
+Lame Duck Sample&$18.439$&$-0.014$&$-0.033$&$0.006$&$~2552$\tabularnewline
+Governor Different Party&$16.817$&$~0.033$&$~0.024$&$0.042$&$11179$\tabularnewline
+Governor Same Party&$20.891$&$~0.015$&$-0.002$&$0.032$&$~3686$\tabularnewline
+Without a House Representative&$16.845$&$~0.018$&$~0.000$&$0.036$&$~2250$\tabularnewline
+With a House Representative&$16.596$&$~0.032$&$~0.024$&$0.041$&$12035$\tabularnewline
+\bottomrule
+\end{tabular}
+\end{table}

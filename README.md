@@ -13,47 +13,20 @@ This README file provides an overview of the replications materials for the arti
 
 ## Codes
 
-- `CV_analysis_descriptive.R`: Implements the first descriptive analysis of the paper. The code replicates figures 1 and 2 of the paper, and figure 6 and table 6 in the SIF. 
+- `analysis_main_effects.R`: Implements the main models for reverse coattails presented in section 5. It also implements results on section 8 about party coordination and mayors' career incentives. 
 
-- `CV_analysis_diff_in_diff.R`: Replicates the diff-in-diff results for the Speech of Bolsonaro on risk perceptions. (table 1, figures 7, and 8).
+- `analysis_section3.R`: Replicates the descriptive results with the number of effective parties in section 3. 
 
-- `CV_analysis_experiments.R`: Replicates the results for the social framing experiment, including the section unpacking the null findings. 
+- `analysis_section6.R`: Replicates the results for section 6; the pork mechanism discussed in the paper. 
+
+- `analysis_section7.R`: Replicates the results for section 7; the information mechanism discussed in the paper. 
+
+- `analysis_partyeffects.R`: Replicates the results with the reverse coattails by parties. It implements the bayesian lasso strategy to deal with sparsity in regression discontinuity designs. It also replicates results with local linear models presented in the appendix. 
+
+- `analysis_appendix.R`: Replicates remaining robustness and validity checks in the appendix. It is important to notice that some of the results in the appendix are presented in the above codes.
+
+- `functions.R`: contains a set of miscelanous functions I heavily rely upon in the previous codes. 
 
 ## Data
 
-Our paper presents analyses based on observation, quasi-experimental, and a framing experiment using novel data from a national online survey fielded by Netquest-Vanderbilt. The survey uses probabilistic samples drawn by the LAPOP team in Vanderbilt implemented with the panel of users registered with Netquest.  The entire survey and the embedded framing experiment received the approval of the University of Maryland Institutional Board Review 1552091-3. 
-
-The parts of the survey data used in the paper are available under `data/CV_data.Rdata`. We direct the reader to tables 3 and 4 in the appendix for a in-depth description of each variable.  The dataset contains de following variables:
-
-- **runoff_bolsonaro**: Likely to vote for Bolsonaro (runoff)          
-- **runoff_haddad**: Likely to vote for Haddad (runoff)
-- **vote_haddad**: Likely to Vote for Haddad (First Round)               
-- **vote_bolsonaro**: Likely to Vote for Bolsonaro (First Round)        
-- **runoff_nulo** : Likely to Vote Null/Blank/Others (Runoff)              
-- **ideo_place_self**: Ideological Self-Placement    
-- **positive_partisanship**: Which Party do you Like more?     
-- **negative_partisanship**:  Which Party do you dislike more? 
-- **covid_job**: Job risk assesment due to COVID-19                 
-- **covid_health**: Health risk assessment due to COVID-19         
-- **covid_government**: Support for how the government is reacting during the pandemic          
-- **treat_reaction**: Behavioral Reaction to the Treatment      
-- **treat_emotions**: Emotional Reaction to the Treatment            
-- **income**: Subjective income measure 
-- **age**: Respondents' Age                       
-- **gender**: Respondents' Gender   
-- **work**: Respondents' Occupational Status
-- **education**: Respondents' Education  
-- **startdate**: Start date of the Survey Response                 
-- **enddate**: End Date of the Survey Response
-- **treat_reaction_page_submit**: Lantency Measure to the Treatment
-- **treat_negative**: Treatment Negative Tweet  
-- **treatment_haddad**: Treatment Haddad Tweet 
-- **treatment_bolsonaro**: Treatment Eduardo Bolsonaro Tweet     
-- **negative_bolsonaro**: Treatment Negative Edurdo Bolsonaro     
-- **neutral_bolsonaro**: Treatment Positive Eduardo Bolsonaro    
-- **negative_haddad**: Treatment Negative Haddad           
-- **neutral_haddad**: Treatment Positive Haddad
-
-
-
-
+Here, one can find the data and models used in the paper. Most of the data came from the Superior Electoral Court. The exception is the data on House Budgetary Amendment that was provided by CEBRAP. In this folder, it is also avaiable the Sparse Models used in the paper. 

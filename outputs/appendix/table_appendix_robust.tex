@@ -1,0 +1,19 @@
+%latex.default(res_appendix, file = here("outputs", "table_appendix_robust.tex"),     title = "", table.env = FALSE, center = "none", col.just = c("l",         rep("c", ncol(res_appendix) - 1)), colheads = c("Bandwidth",         "Local Linear", "Local Quadratic", "Local Cubic", "Diff-in-Means",         "Linear Quadratic", "Linear Cubic"), booktabs = TRUE,     rowname = NULL, caption = "\\textsc{Regression Discontinuity Results: Robustness Checks}",     n.cgroup = 7, cgroup = "\\textsc{Outcome: Vote Share Co-partisans for the House Election}")%
+\begin{table}[!tbp]
+\caption{\textsc{Regression Discontinuity Results: Robustness Checks}\label{}} 
+\begin{tabular}{lcccccc}
+\toprule
+\multicolumn{7}{c}{\bfseries \textsc{Outcome: Vote Share Co-partisans for the House Election}}\tabularnewline
+\cline{1-7}
+\multicolumn{1}{c}{Bandwidth}&\multicolumn{1}{c}{Local Linear}&\multicolumn{1}{c}{Local Quadratic}&\multicolumn{1}{c}{Local Cubic}&\multicolumn{1}{c}{Diff-in-Means}&\multicolumn{1}{c}{Linear Quadratic}&\multicolumn{1}{c}{Linear Cubic}\tabularnewline
+\midrule
+bw \textless  13.951 \%&0.021 (0)&0.021 (0)&0.02 (0.002)&&&\tabularnewline
+bw \textless  1 \%&0.031 (0.271)&0.035 (0.359)&0.017 (0.726)&0.02061 (0.00519)&0.01767 (0.24281)&0.01629 (0.4283)\tabularnewline
+bw \textless  5 \%&0.015 (0.17)&0.02 (0.163)&0.023 (0.214)&0.02608 (0)&0.02183 (0.00107)&0.01337 (0.1322)\tabularnewline
+bw \textless  10 \%&0.016 (0.033)&0.017 (0.083)&0.016 (0.195)&0.03391 (0)&0.02206 (0)&0.01681 (0.00796)\tabularnewline
+bw \textless  15 \%&0.017 (0.008)&0.016 (0.052)&0.017 (0.103)&0.03597 (0)&0.0259 (0)&0.01947 (2e-04)\tabularnewline
+bw \textless  25 \%&0.022 (0)&0.016 (0.013)&0.014 (0.085)&0.04257 (0)&0.02289 (0)&0.02504 (0)\tabularnewline
+bw \textless  100 \%&0.023 (0)&0.024 (0)&0.022 (0)&0.05183 (0)&0.02848 (0)&0.02196 (0)\tabularnewline
+\bottomrule
+\end{tabular}
+\end{table}
